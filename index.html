@@ -37,8 +37,8 @@
         <hr>
         <p>Voilà donc une sélection de mes générateurs:</p>
         <div class="row row-colls-1">
-            <div class="col">
-                <div class="card generator">
+            <div class="col-4">
+                <div class="card tool" link="generators">
                     <div class="card-body">
                         <!-- <img src="./assets/images/Jeff_cartoon.png" alt="..." class="card-img"> -->
                         <div class="card-body" id="menuGenerator">
@@ -57,11 +57,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script>
         $('document').ready(function () {      
-            $('.generator.card').mouseover(function() {
-                element = $(this).children(".card-body").children(".spoiler").addClass("show");
-            })
-            $('.generator.card').mouseout(function() {
-                element = $(this).children(".card-body").children(".spoiler").removeClass("show");
+            $('.tool').click(function() {
+                $(location).attr("href", `./${$(this).attr("link")}/index.html`)
             })
         })
     </script>
