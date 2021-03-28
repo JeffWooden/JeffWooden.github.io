@@ -38,7 +38,7 @@
         <p>Voilà donc une sélection de mes générateurs:</p>
         <div class="row row-colls-1">
             <div class="col-4">
-                <div class="card tool" link="generators">
+                <div class="card tool" link="menu">
                     <div class="card-body">
                         <!-- <img src="./assets/images/Jeff_cartoon.png" alt="..." class="card-img"> -->
                         <div class="card-body" id="menuGenerator">
@@ -58,7 +58,7 @@
     <script>
         $('document').ready(function () {      
             $('.tool').click(function() {
-                $(location).attr("href", `./${$(this).attr("link")}/index.html`)
+                $(location).attr("href", `./generators/${$(this).attr("link")}/index.html`)
             })
         })
     </script>
