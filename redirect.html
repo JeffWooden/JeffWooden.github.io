@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Redirector</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+        result = /#([a-zA-Z0-9]+)/g.exec($(location).attr("href"))
+        links = {
+            "youtube": "https://goo.gl/3jQRGy",
+            "twitter": "https://twitter.com/JeffWooden_",
+            "discord": "https://discord.gg/9pCEREncP9",
+            "cookie": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        }
+        if(result != null){
+            $(location).attr("href", links[result[1]])
+        } else {
+            $("body").append("<div>La redirection demandée n'existe pas</div>")
+        }
+    </script>
+</body>
+</html>
