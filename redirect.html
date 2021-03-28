@@ -21,15 +21,23 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script>
-        $(document).ready(function(){
+        function redirect(){
+            $("body").hide()
+            console.log("Hello !");
             result = /#([a-zA-Z0-9]+)/g.exec($(location).attr("href"))
             $.getJSON("./assets/json/redirect.json").done(function(data){
-                if(result != null){
+                if(result != null && data[result[1]]){
                     $(location).attr("href", data[result[1]])
                 } else {
                     $('body').show()
                 }
             })
+        }
+        $(document).ready(function(){
+            redirect()
+        })
+        $(window).on("hashchange", function(){
+            redirect()
         })
     </script>
 </body>
