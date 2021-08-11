@@ -22,3 +22,17 @@ nav a:hover {color: var(--on-surface-medium); }
 .social-links i {font-size:2rem;}
 
 .container {background-color:var(--surface);border-radius:10px;margin-top:20px;padding:40px;}
+
+.grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 0fr 0fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."
+      ". . ."; 
+}
+
+.card {background-color: var(--surface); border-color: var(--primary)}
+.card .btn {color: var(--on-primary-high); background-color: var(--primary);}
