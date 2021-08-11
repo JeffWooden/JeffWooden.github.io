@@ -53,3 +53,17 @@ nav a:hover {color: var(--on-surface-medium); }
     `--' `---^`---'`---^|---'`---^`---'`   ``---'
                         |                        
 */
+
+.presentation {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "text picture"; 
+    width: 100%; 
+    height: auto; 
+}
+
+#datapack-text {grid-area: "text";}
+#datapack-picture {grid-area: "picture";}
