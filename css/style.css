@@ -23,9 +23,9 @@ body {
 }
 
 .primary:not(.callout) {background-color: var(--primary); color: var(--on-primary-high)}
-.btn,.primary:hover {color: var(--on-primary-medium)}
+.btn.primary:hover {color: var(--on-primary-medium)}
 .secondary:not(.callout) {background-color: var(--secondary); color: var(--on-primary-high)}
-.btn,.secondary:hover {color: var(--on-primary-medium)}
+.btn.secondary:hover {color: var(--on-primary-medium)}
 
 .callout {
 	padding: 1.25rem;
@@ -55,7 +55,7 @@ nav a:hover {color: var(--on-surface-medium); }
       ". . . ."
       ". . . ."; 
 }
-.grid,#datapacks {
+.grid#datapacks {
     grid-template-rows: 1fr 0fr 0fr;
 }
 
