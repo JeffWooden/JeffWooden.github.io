@@ -12,3 +12,7 @@ body {
     --secondary: #03dac5;
     background-color: #121212;
 }
+
+nav { background-color: var(--surface); }
+nav a {color: var(--on-surface-high); }
+nav a:hover {color: var(--on-surface-medium); }
