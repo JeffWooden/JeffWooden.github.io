@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     --background: #121212;
     --surface: #1e1e1e;
@@ -11,6 +12,8 @@ body {
     --on-primary-disabled: rgba(0,0,0,0.38);
     --secondary: #03dac5;
     background-color: #121212;
+    color: var(--on-surface-high);
+    font-family: 'Roboto', sans-serif;
 }
 
 nav { background-color: var(--surface); }
