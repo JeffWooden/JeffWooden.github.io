@@ -16,4 +16,5 @@ body {
 nav { background-color: var(--surface); }
 nav a {color: var(--on-surface-high); }
 nav a:hover {color: var(--on-surface-medium); }
+.social-links {margin-right: 40px;}
 .social-links i {font-size:2rem;}
