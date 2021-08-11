@@ -22,9 +22,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.primary {background-color: var(--primary); color: var(--on-primary-high)}
+.primary:not(.callout) {background-color: var(--primary); color: var(--on-primary-high)}
 .btn,.primary:hover {color: var(--on-primary-medium)}
-.secondary {background-color: var(--secondary); color: var(--on-primary-high)}
+.secondary:not(.callout) {background-color: var(--secondary); color: var(--on-primary-high)}
 .btn,.secondary:hover {color: var(--on-primary-medium)}
 
 .callout {
