@@ -25,13 +25,13 @@ nav a:hover {color: var(--on-surface-medium); }
 
 .grid {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
     gap: 10px 10px; 
     grid-template-areas: 
-      ". . ."
-      ". . ."
-      ". . ."; 
+      ". . . ."
+      ". . . ."
+      ". . . ."; 
 }
 .grid,#datapacks {
     grid-template-rows: 1fr 0fr 0fr;
