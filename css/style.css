@@ -68,3 +68,4 @@ nav a:hover {color: var(--on-surface-medium); }
 
 #datapack-text {grid-area: "text";}
 #datapack-picture {grid-area: "picture";}
+#datapack-picture img {width: 100%;}
