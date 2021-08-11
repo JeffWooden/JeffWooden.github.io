@@ -60,6 +60,12 @@
             $('.tool').click(function() {
                 $(location).attr("href", `./generators/${$(this).attr("link")}/index.html`)
             })
+            $('.card').click(e => {
+                obj = $(e.currentTarget)
+                if(obj.attr("target")){
+                    $(location).attr("href", `./pages/${obj.attr("type")}/${obj.attr("target")}.html`)
+                }
+            })
         })
     </script>
 </body>
