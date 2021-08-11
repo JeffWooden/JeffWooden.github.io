@@ -22,6 +22,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.primary {background-color: var(--primary); color: var(--on-primary-high)}
+.btn,.primary:hover {color: var(--on-primary-medium)}
+.secondary {background-color: var(--secondary); color: var(--on-primary-high)}
+.btn,.secondary:hover {color: var(--on-primary-medium)}
+
 nav { background-color: var(--surface); }
 nav a {color: var(--on-surface-high); }
 nav a:hover {color: var(--on-surface-medium); }
