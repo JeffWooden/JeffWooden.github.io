@@ -27,6 +27,17 @@ body {
 .secondary {background-color: var(--secondary); color: var(--on-primary-high)}
 .btn,.secondary:hover {color: var(--on-primary-medium)}
 
+.callout {
+	padding: 1.25rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	border: 0px solid #e9ecef;
+	border-left-width: .25rem;
+	border-radius: .25rem;
+}
+.callout.primary {border-color: var(--primary)}
+.callout.secondary {border-color: var(--secondary)}
+
 nav { background-color: var(--surface); }
 nav a {color: var(--on-surface-high); }
 nav a:hover {color: var(--on-surface-medium); }
