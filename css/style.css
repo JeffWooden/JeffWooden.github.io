@@ -35,4 +35,5 @@ nav a:hover {color: var(--on-surface-medium); }
 }
 
 .card {background-color: var(--surface); border-color: var(--primary)}
-.card .btn {color: var(--on-primary-high); background-color: var(--primary);}
+.card .btn-primary {color: var(--on-primary-high); background-color: var(--primary);}
+.card .btn-secondary {color: var(--on-primary-high); background-color: var(--secondary);}
