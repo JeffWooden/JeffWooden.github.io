@@ -57,5 +57,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+        loot_table = {"pools": [{"rolls": 1,"entries": []}]}
+        entry = {"type":"minecraft:item","name":"minecraft:stone","functions":[{"function":"minecraft:set_name","name":"<name>"}]}
+        $('#names-list-generate').click((e) => {
+            e.preventDefault()
+            names = $('#names-list-in').val().split(",")
+            if(names.length==1&&names[0]=="") return $('#names-list-out').val("")
+            data = JSON.parse(JSON.stringify(loot_table))
+            names.forEach(x => {
+                data.pools[0].entries.push(JSON.parse(JSON.stringify(entry).replace("<name>", x)))
+            })
+            $('#names-list-out').val(JSON.stringify(data,null,null))
+        })
+    </script>
 </body>
 </html>
