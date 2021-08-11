@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* 
+    ,---.                         |    
+    |  _.,---.,---.,---.,---.,---.|    
+    |   ||---'|   ||---'|    ,---||    
+    `---'`---'`   '`---'`    `---^`---'
+*/
 body {
     --background: #121212;
     --surface: #1e1e1e;
@@ -39,3 +45,11 @@ nav a:hover {color: var(--on-surface-medium); }
 
 .card {background-color: var(--surface); border-color: var(--on-primary-high); transition: 0.1s ease-in;}
 .card:hover {border-color: var(--primary); cursor: pointer; transition: 0.1s ease-out;}
+
+/* 
+    ,--.      |                        |         
+    |   |,---.|--- ,---.,---.,---.,---.|__/ ,---.
+    |   |,---||    ,---||   |,---||    |  \ `---.
+    `--' `---^`---'`---^|---'`---^`---'`   ``---'
+                        |                        
+*/
