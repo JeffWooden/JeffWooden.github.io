@@ -34,5 +34,5 @@ nav a:hover {color: var(--on-surface-medium); }
       ". . ."; 
 }
 
-.card {background-color: var(--surface); border-color: var(--on-primary-high)}
-.card:hover {border-color: var(--primary)}
+.card {background-color: var(--surface); border-color: var(--on-primary-high); transition: 0.1s ease-in;}
+.card:hover {border-color: var(--primary); cursor: pointer; transition: 0.1s ease-out;}
